@@ -12,9 +12,6 @@ namespace alg200_exercises
             _a = a;
         }
 
-
-
-
         public int factorial(int num)
         {
             int result;
@@ -28,11 +25,6 @@ namespace alg200_exercises
                 return result;
             }
         }
-
-
-
-
-
 
         public int factorial1(int a)
         {
@@ -60,22 +52,11 @@ namespace alg200_exercises
             }
             else
             {
+                Console.WriteLine("This is the index.");
                 return i;
             }
             //}
             //if (i <= x) factorial1();
         }
-
-
-        //int cntr = 1;
-        //while (cntr <= _a)
-        //{
-        //    return cntr;
-        //    cntr++;
-        //}
-
-
-
-
     }
 }
