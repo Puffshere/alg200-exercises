@@ -9,6 +9,8 @@ namespace alg200_exercises
         {
             bool repeat = false;
             int a = 0;
+            //int b = 0;
+            //int ret;
 
             while (!repeat)
             {
@@ -26,13 +28,12 @@ namespace alg200_exercises
                     repeat = false;
                     }
             }
-            Console.WriteLine(a);
+            Console.WriteLine();
 
-            Buzz buzz = new Buzz(a);
-            Console.WriteLine(buzz.factorial());
+            Buzz n = new Buzz(a);
+            Console.WriteLine("The factorial of " + a + " is : {0}", n.factorial(a));
 
-
-
+            Console.WriteLine(n.factorial1(a));
 
 
 

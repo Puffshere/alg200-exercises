@@ -11,35 +11,71 @@ namespace alg200_exercises
         {
             _a = a;
         }
-        public int factorial()
-        {
-            int x = _a;
-            int i = 1;
-            for (i = 1; i <= x; i++)
-            {
-                //i++;
-                if (i % 3 == 0 && i % 5 == 0)
-                {
-                    Console.WriteLine("Bang");
-                    return 1;
-                }
-                else if (i % 3 == 0)
-                {
-                    Console.WriteLine("Fizz");
-                    return 2;
-                }
-                else if (i % 5 == 0)
-                {
-                    Console.WriteLine("Buzz");
-                    return 3;
-                }
-                else
-                {
-                    return i;
-                }
 
-                //if (i <= _a) factorial();
+
+
+
+        public int factorial(int num)
+        {
+            int result;
+            if (num == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                result = factorial(num - 1) * num;
+                return result;
             }
         }
+
+
+
+
+
+
+        public int factorial1(int a)
+        {
+            int i = 1;
+            int x = a;
+            bool p = i < x;
+
+            //while (p)
+            //{
+            //i++;
+            if (i % 3 == 0 && i % 5 == 0)
+            {
+                //Console.WriteLine("Bang");
+                return 1;
+            }
+            else if (i % 3 == 0)
+            {
+                //Console.WriteLine("Fizz");
+                return 2;
+            }
+            else if (i % 5 == 0)
+            {
+                //Console.WriteLine("Buzz");
+                return 3;
+            }
+            else
+            {
+                return i;
+            }
+            //}
+            //if (i <= x) factorial1();
+        }
+
+
+        //int cntr = 1;
+        //while (cntr <= _a)
+        //{
+        //    return cntr;
+        //    cntr++;
+        //}
+
+
+
+
     }
 }
