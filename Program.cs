@@ -7,12 +7,12 @@ namespace alg200_exercises
         static void Main(string[] args)
         {
             bool repeat = false;
-            int x = 0;
+            int a = 0;
 
             while (!repeat)
             {
             Console.Write("What is your number?  ");
-            bool isNumber = int.TryParse(Console.ReadLine(), out x);
+            bool isNumber = int.TryParse(Console.ReadLine(), out a);
             Console.WriteLine();
                 if (isNumber)
                 {
@@ -25,7 +25,18 @@ namespace alg200_exercises
                     repeat = false;
                     }
             }
-            Console.WriteLine(x);
+            Console.WriteLine(a);
+
+            Buzz buzz = new Buzz(a);
+            Console.WriteLine(buzz.Hello());
+
+
+
+
+
+
+
+
 
 
             Console.Read();
