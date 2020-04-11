@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace alg200_exercises
 {
     class Program
@@ -28,7 +29,7 @@ namespace alg200_exercises
             Console.WriteLine(a);
 
             Buzz buzz = new Buzz(a);
-            Console.WriteLine(buzz.Hello());
+            Console.WriteLine(buzz.factorial());
 
 
 
