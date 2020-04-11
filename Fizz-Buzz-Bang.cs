@@ -19,23 +19,24 @@ namespace alg200_exercises
             {
                 //i++;
                 if (i % 3 == 0 && i % 5 == 0)
-
-                    //Console.WriteLine("Bang");
+                {
+                    Console.WriteLine("Bang");
                     return 1;
-
+                }
                 else if (i % 3 == 0)
-
-                    //Console.WriteLine("Fizz");
+                {
+                    Console.WriteLine("Fizz");
                     return 2;
-
+                }
                 else if (i % 5 == 0)
-
-                    //Console.WriteLine("Buzz");
+                {
+                    Console.WriteLine("Buzz");
                     return 3;
-
+                }
                 else
-
+                {
                     return i;
+                }
 
                 //if (i <= _a) factorial();
             }
