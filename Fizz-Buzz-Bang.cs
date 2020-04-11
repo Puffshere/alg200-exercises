@@ -1,5 +1,3 @@
-//using System;
-
 namespace alg200_exercises
 {
     class Buzz

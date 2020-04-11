@@ -11,7 +11,7 @@ namespace alg200_exercises
 
             while (!repeat)
             {
-            Console.Write("What is your number?  ");
+            Console.Write("Enter a number for the Fizz-Buzz-Bang exercise?  ");
             bool isNumber = int.TryParse(Console.ReadLine(), out a);
             Console.WriteLine();
                 if (isNumber)
