@@ -1,48 +1,48 @@
 using System;
 
 
-//namespace alg200_exercises
-//{
-//    class BubbleSort
-//    {
-//        private static int[] _array;
+namespace alg200_exercises
+{
+    class BubbleSort
+    {
+        private static int[] _arr1;
 
-//        public void BubbeSort(int[] array)
-//        {
-//            _array = array;
-//        }
-
-
-//        static void SwapInts(int[] array, int position1, int position2)
-//        {
-//            //
-//            // Swaps elements in an array.
-//            //
-//            int temp = array[position1]; // Copy the first position's element
-//            array[position1] = array[position2]; // Assign to the second element
-//            array[position2] = temp; // Assign to the first element
-//        }
+        public BubbleSort(int[] arr1)
+        {
+            _arr1 = arr1;
+        }
 
 
+        static void SwapInts(int[] arr1, int position1, int position2)
+        {
+            //
+            // Swaps elements in an array.
+            //
+            int temp = arr1[position1]; // Copy the first position's element
+            arr1[position1] = arr1[position2]; // Assign to the second element
+            arr1[position2] = temp; // Assign to the first element
+        }
 
-//        public int[] bubbleSort()
-//        {
-//            //int[] swapped = 0;
-//            bool isSorted = false;
-//            while (isSorted)
-//            {
-//                isSorted = true;
-//                for (int i = 0; i < _array.Length - 1; i++)
-//                {
-//                    if (_array[i] > _array[i + 1])
-//                    {
-//                        SwapInts(_array, i, i + 1);
-//                        isSorted = false;
-//                    }
-//                }
-//            }
-//            //return swapped;
-//        }
 
-//    }
-//}
+
+        public int[] bubbleSort()
+        {
+            int[] swapped = new int[5];
+            bool isSorted = false;
+            while (isSorted)
+            {
+                isSorted = true;
+                for (int i = 0; i < swapped.Length - 1; i++)
+                {
+                    if (swapped[i] > swapped[i + 1])
+                    {
+                        SwapInts(swapped, i, i + 1);
+                        isSorted = false;
+                    }
+                }
+            }
+            return swapped;
+        }
+
+    }
+}

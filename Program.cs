@@ -14,6 +14,7 @@ namespace alg200_exercises
             int three = 0;
             int four = 0;
             int five = 0;
+            int[] arr1 = new int[5];
 
             //int b = 0;
             //int ret;
@@ -41,7 +42,6 @@ namespace alg200_exercises
 
             //Console.WriteLine(n.factorial1(a));
 
-
             for (int i = 1; i <= a; i++)
             {  
                 if (i % 3 == 0 && i % 5 == 0)
@@ -61,9 +61,8 @@ namespace alg200_exercises
                 Console.WriteLine(i);  
             }  
         }
-
                  
-            
+            //number 1
             while (repeat)
                  {
                  Console.WriteLine();
@@ -81,7 +80,7 @@ namespace alg200_exercises
                         repeat = true;
                         }
                  }  
-            
+            //number 2
             while (!repeat)
                  {
                  Console.WriteLine();
@@ -99,7 +98,7 @@ namespace alg200_exercises
                         repeat = false;
                         }
                  }  
-            
+            //number 3
             while (repeat)
                  {
                  Console.WriteLine();
@@ -117,7 +116,7 @@ namespace alg200_exercises
                         repeat = true;
                         }
                  }  
-            
+            //number 4
             while (!repeat)
                  {
                  Console.WriteLine();
@@ -135,7 +134,7 @@ namespace alg200_exercises
                         repeat = false;
                         }
                  }  
-            
+            //number 5
             while (repeat)
                  {
                  Console.WriteLine();
@@ -156,36 +155,30 @@ namespace alg200_exercises
 
                  Console.WriteLine();
 
-
             foreach (int id in Sorting())
         {
             Console.WriteLine(id);
         }
-        // Loop over array of integers.
-        //int[] arr1 = Sorting();
-        //for (int i = 0; i < arr1.Length; i++)
-        //{
-            //Console.WriteLine(arr1[i]);
-        //}
-
-
 
             int[] Sorting()
                 {
-                int[] arr1 = new int[5];
-                arr1[0] = one;
+                arr1[0] = one;    
                 arr1[1] = two;
                 arr1[2] = three;
                 arr1[3] = four;
                 arr1[4] = five;
                 return arr1;
-                }
+                }  
 
-
-           // BubbleSort o = new BubbleSort(b);
-           // Console.WriteLine("The sorted array appears as follows : {0}", o.bubbleSort(b));
-
-
+            BubbleSort o = new BubbleSort(arr1);
+            //int[] ordered = o.bubbleSort();
+            //Console.WriteLine("The sorted array appears as follows : {0}", o.bubbleSort(arr1));
+            foreach (int p in arr1)
+                {
+            Console.WriteLine(p);
+                    }
+             
+            Console.WriteLine();
                      
 
             Console.Read();
