@@ -154,10 +154,11 @@ namespace alg200_exercises
                  }
 
                  Console.WriteLine();
-
+            Console.Write("Before Sort:  ");
             foreach (int id in Sorting())
         {
-            Console.WriteLine(id);
+            //Console.Write("Before Sort:  ");
+            Console.Write(id);
         }
 
             int[] Sorting()
@@ -170,17 +171,53 @@ namespace alg200_exercises
                 return arr1;
                 }  
 
-            BubbleSort o = new BubbleSort(arr1);
+            static void SwapInts(int[] arr1, int position1, int position2)
+        {
+            int temp = arr1[position1];
+            arr1[position1] = arr1[position2];
+            arr1[position2] = temp;
+        }
+
+
+
+
+           
+           
+            //int[] arr1 = new int[5];
+            bool isSorted = false;
+            while (!isSorted)
+            {
+                isSorted = true;
+                for (int i = 0; i < arr1.Length - 1; i++)
+                {
+                    if (arr1[i] > arr1[i + 1])
+                    {
+                        SwapInts(arr1, i, i + 1);
+                        isSorted = false;
+                    }
+                }
+            }
+           
+            
+
+
+
             //int[] ordered = o.bubbleSort();
             //Console.WriteLine("The sorted array appears as follows : {0}", o.bubbleSort(arr1));
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.Write("After Sort:  ");
+
             foreach (int p in arr1)
                 {
-            Console.WriteLine(p);
-                    }
+                //Console.Write("After Sort:  ");
+                Console.Write(p);
+                }
              
-            Console.WriteLine();
+            //BubbleSort o = new BubbleSort(arr1);
+            //Console.WriteLine(o.bubbleSort(arr1));
                      
-
+              
             Console.Read();
     }
 }
