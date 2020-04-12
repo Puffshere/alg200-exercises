@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 
 namespace alg200_exercises
 {
@@ -156,8 +156,32 @@ namespace alg200_exercises
 
                  Console.WriteLine();
 
-            int[] arr1 = new int[] {one, two, three, four, five};
-            Console.WriteLine(arr1);
+
+            foreach (int id in Sorting())
+        {
+            Console.WriteLine(id);
+        }
+        // Loop over array of integers.
+        //int[] arr1 = Sorting();
+        //for (int i = 0; i < arr1.Length; i++)
+        //{
+            //Console.WriteLine(arr1[i]);
+        //}
+
+
+
+            int[] Sorting()
+                {
+                int[] arr1 = new int[5];
+                arr1[0] = one;
+                arr1[1] = two;
+                arr1[2] = three;
+                arr1[3] = four;
+                arr1[4] = five;
+                return arr1;
+                }
+
+
            // BubbleSort o = new BubbleSort(b);
            // Console.WriteLine("The sorted array appears as follows : {0}", o.bubbleSort(b));
 
