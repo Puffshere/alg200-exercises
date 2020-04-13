@@ -13,11 +13,11 @@ namespace alg200_exercises
         }
 
         //non-recursion
-        public int factorial(int num)
+        public string factorial(int num)
         {
             if (num == 1)
             {
-                return 1;
+                return "";
             }
             else
             {
@@ -40,7 +40,8 @@ namespace alg200_exercises
                         Console.WriteLine(i);
                     }
                 }
-                return num;
+                string s = num.ToString();
+                return "";
             }
         }
         public int factorial1(int number)

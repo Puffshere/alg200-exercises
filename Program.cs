@@ -18,6 +18,7 @@ namespace alg200_exercises
             int b = a;
 
 //-----------------Fizz-Buzz-Bang-------------------
+
             while (!repeat)
             {
             Console.WriteLine();
@@ -37,9 +38,6 @@ namespace alg200_exercises
             }
             Console.WriteLine();
 
-
-
-
             //works
             Buzz n = new Buzz(a);
 
@@ -47,16 +45,11 @@ namespace alg200_exercises
             Console.WriteLine();
             Console.WriteLine(n.factorial(a));
 
-
-
-
-
 //-------------------Bubble-Sort---------------------
                  
             //number 1
             while (repeat)
                  {
-                 Console.WriteLine();
                  Console.Write("Enter 1 of 5 numbers to be sorted for the Bubble Sort exercise:  ");
                  bool isNumber = int.TryParse(Console.ReadLine(), out one);
                  Console.WriteLine();
@@ -144,12 +137,6 @@ namespace alg200_exercises
                         }
                  }
 
-            Console.WriteLine();
-            Console.Write("Before Sort:  ");
-            foreach (int id in Sorting())
-            {
-            Console.Write(id + ",");
-            }
             int[] Sorting()
                 {
                 arr1[0] = one;    
@@ -159,33 +146,16 @@ namespace alg200_exercises
                 arr1[4] = five;
                 return arr1;
                 }  
-            static void SwapInts(int[] arr1, int position1, int position2)
-            {
-            int temp = arr1[position1];
-            arr1[position1] = arr1[position2];
-            arr1[position2] = temp;
-            }
-            bool isSorted = false;
-            while (!isSorted)
-            {
-                isSorted = true;
-                for (int i = 0; i < arr1.Length - 1; i++)
-                {
-                    if (arr1[i] > arr1[i + 1])
-                    {
-                        SwapInts(arr1, i, i + 1);
-                        isSorted = false;
-                    }
-                }          
-            }
             Console.WriteLine();
+            Console.Write("Before Sort:  ");
+            foreach (int id in Sorting())
+            {
+            Console.Write(id + " ");
+            }
             Console.WriteLine();
             Console.Write("After Sort:  ");    
-            
-            foreach (int p in arr1)
-                {
-                Console.Write(p + ",");
-                }
+            BubbleSort bSorting = new BubbleSort(one, two, three, four, five);
+           Console.Write(bSorting.bubbleSort(one, two, three, four, five));
                      
               
             Console.Read();
