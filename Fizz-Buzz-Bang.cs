@@ -43,6 +43,7 @@ namespace alg200_exercises
                 return "";
             }
         }
+        //recursion
         public int factorial1(int number)
         {
             if (number == 1)
