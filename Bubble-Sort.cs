@@ -5,7 +5,6 @@ namespace alg200_exercises
 {
     class BubbleSort
     {
-
         public BubbleSort(int one, int two, int three, int four, int five)
         {
             int[] arr1 = new int[5];
@@ -15,17 +14,12 @@ namespace alg200_exercises
             arr1[3] = four;
             arr1[4] = five;
         }
-
-
         static void SwapInts(int[] arr1, int position1, int position2)
         {
             int temp = arr1[position1];
             arr1[position1] = arr1[position2];
             arr1[position2] = temp;
         }
-
-
-
         public string bubbleSort(int one, int two, int three, int four, int five)
         {
             int[] arr1 = new int[5];
@@ -53,6 +47,5 @@ namespace alg200_exercises
             }
             return "";
         }
-
     }
 }

@@ -147,13 +147,13 @@ namespace alg200_exercises
                 return arr1;
                 }  
             Console.WriteLine();
-            Console.Write("Before Sort:  ");
+            Console.Write("Before Bubble Sort:  ");
             foreach (int id in Sorting())
             {
             Console.Write(id + " ");
             }
             Console.WriteLine();
-            Console.Write("After Sort:  ");    
+            Console.Write("After Bubble Sort:  ");    
             BubbleSort bSorting = new BubbleSort(one, two, three, four, five);
            Console.Write(bSorting.bubbleSort(one, two, three, four, five));
                      
