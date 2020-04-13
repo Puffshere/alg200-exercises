@@ -15,12 +15,11 @@ namespace alg200_exercises
             int four = 0;
             int five = 0;
             int[] arr1 = new int[5];
-
-            //int b = 0;
-            //int ret;
+            int b = a;
 
             while (!repeat)
             {
+            Console.WriteLine();
             Console.Write("Enter a number for the Fizz-Buzz-Bang exercise?  ");
             bool isNumber = int.TryParse(Console.ReadLine(), out a);
             Console.WriteLine();
@@ -38,29 +37,10 @@ namespace alg200_exercises
             Console.WriteLine();
 
             Buzz n = new Buzz(a);
-            Console.WriteLine("The factorial of " + a + " is : {0}", n.factorial(a));
 
-            //Console.WriteLine(n.factorial1(a));
-
-            for (int i = 1; i <= a; i++)
-            {  
-                if (i % 3 == 0 && i % 5 == 0)
-                {  
-                Console.WriteLine("FizzBuzz");  
-                }    
-                else if (i % 3 == 0)
-                {  
-                Console.WriteLine("Fizz");  
-                }
-                else if (i % 5 == 0)
-                {  
-                Console.WriteLine("Buzz");  
-                }
-                else
-                {  
-                Console.WriteLine(i);  
-            }  
-        }
+            Console.WriteLine("The factorial of " + a + " is : {0}", n.factorial1(a));
+            Console.WriteLine();
+            Console.WriteLine(n.factorial(a));
                  
             //number 1
             while (repeat)
@@ -153,14 +133,12 @@ namespace alg200_exercises
                         }
                  }
 
-                 Console.WriteLine();
+            Console.WriteLine();
             Console.Write("Before Sort:  ");
             foreach (int id in Sorting())
-        {
-            //Console.Write("Before Sort:  ");
-            Console.Write(id);
-        }
-
+            {
+            Console.Write(id + ",");
+            }
             int[] Sorting()
                 {
                 arr1[0] = one;    
@@ -170,20 +148,12 @@ namespace alg200_exercises
                 arr1[4] = five;
                 return arr1;
                 }  
-
             static void SwapInts(int[] arr1, int position1, int position2)
-        {
+            {
             int temp = arr1[position1];
             arr1[position1] = arr1[position2];
             arr1[position2] = temp;
-        }
-
-
-
-
-           
-           
-            //int[] arr1 = new int[5];
+            }
             bool isSorted = false;
             while (!isSorted)
             {
@@ -197,28 +167,17 @@ namespace alg200_exercises
                     }
                 }
             }
-           
-            
-
-
-
-            //int[] ordered = o.bubbleSort();
-            //Console.WriteLine("The sorted array appears as follows : {0}", o.bubbleSort(arr1));
             Console.WriteLine();
             Console.WriteLine();
             Console.Write("After Sort:  ");
-
+            
             foreach (int p in arr1)
                 {
-                //Console.Write("After Sort:  ");
-                Console.Write(p);
+                Console.Write(p + ",");
                 }
-             
-            //BubbleSort o = new BubbleSort(arr1);
-            //Console.WriteLine(o.bubbleSort(arr1));
                      
               
             Console.Read();
+        }
     }
-}
 }

@@ -12,51 +12,48 @@ namespace alg200_exercises
             _a = a;
         }
 
+        //non-recursion
         public int factorial(int num)
         {
-            int result;
             if (num == 1)
             {
                 return 1;
             }
             else
             {
-                result = factorial(num - 1) * num;
-                return result;
+                for (int i = 1; i <= num; i++)
+                {
+                    if (i % 3 == 0 && i % 5 == 0)
+                    {
+                        Console.WriteLine("FizzBuzz");
+                    }
+                    else if (i % 3 == 0)
+                    {
+                        Console.WriteLine("Fizz");
+                    }
+                    else if (i % 5 == 0)
+                    {
+                        Console.WriteLine("Buzz");
+                    }
+                    else
+                    {
+                        Console.WriteLine(i);
+                    }
+                }
+                return num;
             }
         }
-
-        public int factorial1(int a)
+        public int factorial1(int number)
         {
-            int i = 1;
-            int x = a;
-            bool p = i < x;
-
-            //while (p)
-            //{
-            //i++;
-            if (i % 3 == 0 && i % 5 == 0)
+            if (number == 1)
             {
-                //Console.WriteLine("Bang");
                 return 1;
-            }
-            else if (i % 3 == 0)
-            {
-                //Console.WriteLine("Fizz");
-                return 2;
-            }
-            else if (i % 5 == 0)
-            {
-                //Console.WriteLine("Buzz");
-                return 3;
             }
             else
             {
-                Console.WriteLine("This is the index.");
-                return i;
+                int q = factorial1(number - 1) * number;
+                return q;
             }
-            //}
-            //if (i <= x) factorial1();
         }
     }
 }
