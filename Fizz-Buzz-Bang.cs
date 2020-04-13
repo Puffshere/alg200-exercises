@@ -40,7 +40,6 @@ namespace alg200_exercises
                         Console.WriteLine(i);
                     }
                 }
-                string s = num.ToString();
                 return "";
             }
         }
