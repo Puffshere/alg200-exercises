@@ -17,6 +17,7 @@ namespace alg200_exercises
             int[] arr1 = new int[5];
             int b = a;
 
+//-----------------Fizz-Buzz-Bang-------------------
             while (!repeat)
             {
             Console.WriteLine();
@@ -36,11 +37,21 @@ namespace alg200_exercises
             }
             Console.WriteLine();
 
+
+
+
+            //works
             Buzz n = new Buzz(a);
 
             Console.WriteLine("The factorial of " + a + " is : {0}", n.factorial1(a));
             Console.WriteLine();
             Console.WriteLine(n.factorial(a));
+
+
+
+
+
+//-------------------Bubble-Sort---------------------
                  
             //number 1
             while (repeat)
@@ -165,11 +176,11 @@ namespace alg200_exercises
                         SwapInts(arr1, i, i + 1);
                         isSorted = false;
                     }
-                }
+                }          
             }
             Console.WriteLine();
             Console.WriteLine();
-            Console.Write("After Sort:  ");
+            Console.Write("After Sort:  ");    
             
             foreach (int p in arr1)
                 {
