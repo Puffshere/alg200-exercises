@@ -148,17 +148,21 @@ namespace alg200_exercises
                 }  
             Console.WriteLine();
             Console.Write("Before Bubble Sort:  ");
-            foreach (int id in Sorting())
-            {
-            Console.Write(id + " ");
-            }
+                foreach (int id in Sorting())
+                {
+                Console.Write(id + " ");
+                }
             Console.WriteLine();
             Console.Write("After Bubble Sort:  ");    
             BubbleSort bSorting = new BubbleSort(one, two, three, four, five);
-           Console.Write(bSorting.bubbleSort(one, two, three, four, five));
-              Console.WriteLine();
-              Console.WriteLine();
-              Console.WriteLine("Press enter to exit program");
+            Console.Write(bSorting.bubbleSort(one, two, three, four, five));
+            Console.WriteLine();
+            Console.Write("After Insertion Sort:  ");    
+            InsertionSort iSorting = new InsertionSort(one, two, three, four, five);
+            Console.Write(iSorting.insertionSort(one, two, three, four, five));
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Press enter to exit program");
             Console.Read();
         }
     }
