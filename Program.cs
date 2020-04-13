@@ -156,8 +156,9 @@ namespace alg200_exercises
             Console.Write("After Bubble Sort:  ");    
             BubbleSort bSorting = new BubbleSort(one, two, three, four, five);
            Console.Write(bSorting.bubbleSort(one, two, three, four, five));
-                     
-              
+              Console.WriteLine();
+              Console.WriteLine();
+              Console.WriteLine("Press enter to exit program");
             Console.Read();
         }
     }
