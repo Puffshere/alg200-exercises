@@ -147,7 +147,7 @@ namespace alg200_exercises
                 return arr1;
                 }  
             Console.WriteLine();
-            Console.Write("Before Bubble Sort:  ");
+            Console.Write("Before Sorting:  ");
                 foreach (int id in Sorting())
                 {
                 Console.Write(id + " ");
