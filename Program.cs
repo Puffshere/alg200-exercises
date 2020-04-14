@@ -50,7 +50,7 @@ namespace alg200_exercises
             //number 1
             while (repeat)
                  {
-                 Console.Write("Enter 1 of 5 numbers to be sorted for the Bubble Sort exercise:  ");
+                 Console.Write("Enter 1 of 5 numbers to be sorted in the Sorting exercises:  ");
                  bool isNumber = int.TryParse(Console.ReadLine(), out one);
                  Console.WriteLine();
                     if (isNumber)
@@ -68,7 +68,7 @@ namespace alg200_exercises
             while (!repeat)
                  {
                  Console.WriteLine();
-                 Console.Write("Enter the second of the 5 numbers to be sorted for the Bubble Sort exercise:  ");
+                 Console.Write("Enter the second of the 5 numbers to be sorted in the Sorting exercises:  ");
                  bool isNumber = int.TryParse(Console.ReadLine(), out two);
                  Console.WriteLine();
                     if (isNumber)
@@ -86,7 +86,7 @@ namespace alg200_exercises
             while (repeat)
                  {
                  Console.WriteLine();
-                 Console.Write("Enter the third of 5 numbers to be sorted for the Bubble Sort exercise:  ");
+                 Console.Write("Enter the third of 5 numbers to be sorted in the Sorting exercises:  ");
                  bool isNumber = int.TryParse(Console.ReadLine(), out three);
                  Console.WriteLine();
                     if (isNumber)
@@ -104,7 +104,7 @@ namespace alg200_exercises
             while (!repeat)
                  {
                  Console.WriteLine();
-                 Console.Write("Enter the fourth of 5 numbers to be sorted for the Bubble Sort exercise:  ");
+                 Console.Write("Enter the fourth of 5 numbers to be sorted in the Sorting exercises:  ");
                  bool isNumber = int.TryParse(Console.ReadLine(), out four);
                  Console.WriteLine();
                     if (isNumber)
@@ -122,7 +122,7 @@ namespace alg200_exercises
             while (repeat)
                  {
                  Console.WriteLine();
-                 Console.Write("Enter the fifth and final of 5 numbers to be sorted for the Bubble Sort exercise:  ");
+                 Console.Write("Enter the fifth and final of 5 numbers to be sorted in the Sorting exercises:  ");
                  bool isNumber = int.TryParse(Console.ReadLine(), out five);
                  Console.WriteLine();
                     if (isNumber)
@@ -146,7 +146,6 @@ namespace alg200_exercises
                 arr1[4] = five;
                 return arr1;
                 }  
-            arr1 = Sorting();
             Console.WriteLine();
             Console.Write("Before Sorting:  ");
                 foreach (int id in Sorting())
