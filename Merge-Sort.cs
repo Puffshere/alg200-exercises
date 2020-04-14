@@ -56,17 +56,5 @@ namespace alg200_exercises
             }
             return "";
         }
-
-
-
-
-
-
-
-        //foreach (int t in arr1)
-        //{
-        //    Console.Write(t + " ");
-        //}
-        //return "";
     }
 }
