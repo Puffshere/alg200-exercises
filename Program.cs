@@ -162,8 +162,12 @@ namespace alg200_exercises
             Console.Write(iSorting.insertionSort(arr1));
             Console.WriteLine();
             Console.Write("After Merge Sort:  ");    
-            MergeSort mSorting = new MergeSort(arr1);
-            Console.Write(mSorting.mergeSort(arr1));
+            //MergeSort mSorting = new MergeSort(arr1);
+            //Console.Write(mSorting.mergeSort(arr1)Console.WriteLine();
+            Console.WriteLine();
+            Console.Write("After Merge Sort:  ");    
+            QuickSort qSorting = new QuickSort(arr1);
+            Console.Write(qSorting.quickSort(arr1));
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Press enter to exit program");
