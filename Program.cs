@@ -16,6 +16,7 @@ namespace alg200_exercises
             int five = 0;
             int[] arr1 = new int[5];
             int b = a;
+            int[] d = Sorting();
 
 //-----------------Fizz-Buzz-Bang-------------------
 
@@ -154,27 +155,46 @@ namespace alg200_exercises
                 }
             Console.WriteLine();
             Console.Write("After Bubble Sort:  ");    
-            BubbleSort bSorting = new BubbleSort(arr1);
-            Console.Write(bSorting.bubbleSort(arr1));
+            BubbleSort bSorting = new BubbleSort(d);
+            Console.Write(bSorting.bubbleSort(d));
             Console.WriteLine();
             Console.Write("After Insertion Sort:  ");    
-            InsertionSort iSorting = new InsertionSort(arr1);
-            Console.Write(iSorting.insertionSort(arr1));
+            InsertionSort iSorting = new InsertionSort(d);
+            Console.Write(iSorting.insertionSort(d));
             Console.WriteLine();
             Console.Write("After Merge Sort:  ");    
             //MergeSort mSorting = new MergeSort(arr1);
             //Console.Write(mSorting.mergeSort(arr1)Console.WriteLine();
             Console.WriteLine();
-            Console.Write("After Quick Sort:  ");    
-            QuickSort qSorting = new QuickSort(arr1);
-            Console.Write(qSorting.quickSort(arr1));Console.WriteLine();
+            Console.WriteLine("After Quick Sort:  ");    
+            QuickSort qSorting = new QuickSort(d, 0, 4);
+            Console.Write(qSorting.quickSort(d, 0, 4));
+            //Console.Write(qSorting.quickSort(arr1));Console.WriteLine();
             Console.Write("Linked List Reversed:  ");    
             LinkedList lList = new LinkedList(arr1);
             Console.Write(lList.linkedList(arr1));
             Console.WriteLine();
+
+
+//-------------------Quick-Sort-------------------------------
+
+         //   int t = 5, i;   
+        // Console.WriteLine("Quick Sort");
+        // Console.Write("Initial array is: ");   
+        // for (i = 0; i < t; i++) {
+        //    Console.Write(arr1[i] + " ");
+        // }
+        // Console.Write("\nSorted Array is: ");   
+       //  for (i = 0; i < t; i++) {
+        // }
+
+
+
+
+            Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Press enter to exit program");
-            Console.Read();
+            Console.Read();   
         }
     }
 }    
