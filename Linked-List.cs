@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace alg200_exercises
 {
-    class QuickSort
+    class LinkedList
     {
-        public QuickSort(int[] arr1)
+        public LinkedList(int[] arr1)
         {
         }
-        public string quickSort(int[] arr1)
+        public string linkedList(int[] arr1)
         {
             Console.Write("hello");
             return "";
