@@ -146,6 +146,7 @@ namespace alg200_exercises
                 arr1[4] = five;
                 return arr1;
                 }  
+            arr1 = Sorting();
             Console.WriteLine();
             Console.Write("Before Sorting:  ");
                 foreach (int id in Sorting())
@@ -154,12 +155,16 @@ namespace alg200_exercises
                 }
             Console.WriteLine();
             Console.Write("After Bubble Sort:  ");    
-            BubbleSort bSorting = new BubbleSort(one, two, three, four, five);
-            Console.Write(bSorting.bubbleSort(one, two, three, four, five));
+            BubbleSort bSorting = new BubbleSort(arr1);
+            Console.Write(bSorting.bubbleSort(arr1));
             Console.WriteLine();
             Console.Write("After Insertion Sort:  ");    
-            InsertionSort iSorting = new InsertionSort(one, two, three, four, five);
-            Console.Write(iSorting.insertionSort(one, two, three, four, five));
+            InsertionSort iSorting = new InsertionSort(arr1);
+            Console.Write(iSorting.insertionSort(arr1));
+            Console.WriteLine();
+            Console.Write("After Merge Sort:  ");    
+            MergeSort mSorting = new MergeSort(arr1);
+            Console.Write(mSorting.mergeSort(arr1));
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Press enter to exit program");

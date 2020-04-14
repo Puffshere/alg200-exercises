@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace alg200_exercises
 {
-    class InsertionSort
+    class MergeSort
     {
-        public InsertionSort(int[] arr1)
+        public MergeSort(int[] arr1)
         {
         }
-        public string insertionSort(int[] arr1)
+        public string mergeSort(int[] arr1)
         {
             int i, key, j;
             for (i = 1; i < arr1.Length; i++)
