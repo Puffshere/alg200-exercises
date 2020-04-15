@@ -159,34 +159,25 @@ namespace alg200_exercises
             Console.Write(bSorting.bubbleSort(d));
             Console.WriteLine();
             Console.Write("After Insertion Sort:  ");    
-            InsertionSort iSorting = new InsertionSort(d);
-            Console.Write(iSorting.insertionSort(d));
+            InsertionSort iSorting = new InsertionSort(Sorting());
+            Console.Write(iSorting.insertionSort(Sorting()));
             Console.WriteLine();
             Console.Write("After Merge Sort:  ");    
             //MergeSort mSorting = new MergeSort(arr1);
-            //Console.Write(mSorting.mergeSort(arr1)Console.WriteLine();
+            //Console.Write(mSorting.mergeSort(arr1));
             Console.WriteLine();
-            Console.WriteLine("After Quick Sort:  ");    
-            QuickSort qSorting = new QuickSort(d, 0, 4);
-            Console.Write(qSorting.quickSort(d, 0, 4));
-            //Console.Write(qSorting.quickSort(arr1));Console.WriteLine();
+            Console.Write("After Quick Sort:  ");  
+            QuickSort qSorting = new QuickSort(Sorting(), 0, 4);
+            Console.WriteLine(qSorting.quickSort(Sorting(), 0, 4));
+            Console.WriteLine();
             Console.Write("Linked List Reversed:  ");    
             LinkedList lList = new LinkedList(arr1);
             Console.Write(lList.linkedList(arr1));
             Console.WriteLine();
 
 
-//-------------------Quick-Sort-------------------------------
 
-         //   int t = 5, i;   
-        // Console.WriteLine("Quick Sort");
-        // Console.Write("Initial array is: ");   
-        // for (i = 0; i < t; i++) {
-        //    Console.Write(arr1[i] + " ");
-        // }
-        // Console.Write("\nSorted Array is: ");   
-       //  for (i = 0; i < t; i++) {
-        // }
+        
 
 
 
