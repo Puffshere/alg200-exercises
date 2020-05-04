@@ -163,29 +163,32 @@ namespace alg200_exercises
             Console.Write(iSorting.insertionSort(Sorting()));
             Console.WriteLine();
             Console.Write("After Merge Sort:  ");    
-            //MergeSort mSorting = new MergeSort(arr1);
-            //Console.Write(mSorting.mergeSort(arr1));
+            MergeSort mSorting = new MergeSort(Sorting());
+            Console.Write(mSorting.mergeSort(Sorting()));
             Console.WriteLine();
             Console.Write("After Quick Sort:  ");  
             QuickSort qSorting = new QuickSort(Sorting(), 0, 4);
             Console.WriteLine(qSorting.quickSort(Sorting(), 0, 4));
             Console.WriteLine();
+
+
             Console.Write("Linked List Reversed:  ");    
-            LinkedList lList = new LinkedList(arr1);
-            Console.Write(lList.linkedList(arr1));
+            //LinkedList llist = new LinkedList(arr1);
+            //llist.head = new LinkedListNode(1);
+            //LinkedListNode second = new LinkedListNode(2);
+            //LinkedListNode third = new LinkedListNode(3);
+            //llist.head.next = second;
+            //second.next = third;
+
+
+
+            //Console.Write(lList.linkedList());
             Console.WriteLine();
-
-
-
-        
-
-
-
-
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("Press enter to exit program");
             Console.Read();   
-        }
+        }      
     }
 }    
+    

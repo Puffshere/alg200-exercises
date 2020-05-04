@@ -48,10 +48,10 @@ namespace alg200_exercises
                 {
                     quickSort(arr1, pivot + 1, right);
                 }
-            }
-            foreach (int num in arr1)
-            {
-                Console.Write(num + " ");
+                foreach (int num in arr1)
+                {
+                    Console.Write(num + " ");
+                }
             }
             return "";
         }
