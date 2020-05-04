@@ -48,7 +48,6 @@ namespace alg200_exercises
                 {
                     quickSort(arr1, pivot + 1, right);
                 }
-
             }
             return "";
         }

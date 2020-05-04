@@ -28,7 +28,6 @@ namespace alg200_exercises
             int leftEnd = (rightEnd + leftStart) / 2;
             int rightStart = leftEnd + 1;
             int size = rightEnd - leftStart + 1;
-
             int left = leftStart;
             int right = rightStart;
             int index = leftStart;
@@ -41,7 +40,6 @@ namespace alg200_exercises
                     index++;
                     left++;
                     start = false;
-
                 }
                 else
                 {
@@ -53,21 +51,19 @@ namespace alg200_exercises
             }
             Array.Copy(arr1, left, temp, index, leftEnd - left + 1);
             Array.Copy(arr1, right, temp, index, rightEnd - right + 1);
-            
             Array.Copy(temp, leftStart, arr1, leftStart, size);
-          
             if (start)
-                {
-                Console.Write("Hello ");
-                foreach (int num in arr1)
             {
-                Console.Write(num + " ");
-            }
-                }
-            if (!start)
+            Console.Write("Hello ");
+                foreach (int num in arr1)
                 {
-                Console.Write("Goodbye");
+                Console.Write(num + " ");
                 }
+            }
+            if (!start)
+            {
+            Console.Write("Goodbye");
+            }
         }
     }
 }

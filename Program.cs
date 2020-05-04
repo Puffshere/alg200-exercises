@@ -20,7 +20,7 @@ namespace alg200_exercises
 
 //-----------------Fizz-Buzz-Bang-------------------
 
-            while (!repeat)
+            while (!repeat) 
             {
             Console.WriteLine();
             Console.Write("Enter a number for the Fizz-Buzz-Bang exercise?  ");
