@@ -51,7 +51,10 @@ namespace alg200_exercises
             Array.Copy(arr1, left, temp, index, leftEnd - left + 1);
             Array.Copy(arr1, right, temp, index, rightEnd - right + 1);
             Array.Copy(temp, leftStart, arr1, leftStart, size);
-         
+            foreach (int num in arr1)
+            {
+                Console.Write(num + " ");
+            }
         }
     }
 }
