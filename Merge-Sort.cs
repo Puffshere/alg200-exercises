@@ -8,10 +8,9 @@ namespace alg200_exercises
         public MergeSort(int[] arr1)
         {
         }
-        public string mergeSort(int[] arr1)
+        public void mergeSort(int[] arr1)
         {
             mergeSort(arr1, new int[arr1.Length], 0, arr1.Length - 1);
-        return "";
         }
         public static void mergeSort(int[] arr1, int[] temp, int leftStart, int rightEnd)
         {
@@ -52,10 +51,7 @@ namespace alg200_exercises
             Array.Copy(arr1, left, temp, index, leftEnd - left + 1);
             Array.Copy(arr1, right, temp, index, rightEnd - right + 1);
             Array.Copy(temp, leftStart, arr1, leftStart, size);
-            foreach (int num in arr1)
-            {
-                Console.Write(num + " ");
-            }
+         
         }
     }
 }

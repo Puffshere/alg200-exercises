@@ -164,11 +164,24 @@ namespace alg200_exercises
             Console.WriteLine();
             Console.Write("After Merge Sort:  ");    
             MergeSort mSorting = new MergeSort(Sorting());
-            Console.Write(mSorting.mergeSort(Sorting()));
+
+
+            
+            mSorting.mergeSort(Sorting());
+
+
+            //string sub = mSorting.mergeSort(Math.Max(0, Sorting().Length - 5));
+
+
+            //Console.Write(sub);
             Console.WriteLine();
             Console.Write("After Quick Sort:  ");  
-            QuickSort qSorting = new QuickSort(Sorting(), 0, 4);
-            Console.WriteLine(qSorting.quickSort(Sorting(), 0, 4));
+            QuickSort qSorting = new QuickSort(arr1, 0, 4);
+              foreach (int num in arr1)
+                {
+                    Console.Write(num + " ");
+                }
+            Console.WriteLine(qSorting.quickSort(arr1, 0, 4));
             Console.WriteLine();
 
 
