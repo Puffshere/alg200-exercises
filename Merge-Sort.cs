@@ -32,7 +32,7 @@ namespace alg200_exercises
             int left = leftStart;
             int right = rightStart;
             int index = leftStart;
-
+            bool start = false;
             while (left <= leftEnd && right <= rightEnd)
             {
                 if (arr1[left] <= arr1[right])
@@ -40,21 +40,34 @@ namespace alg200_exercises
                     temp[index] = arr1[left];
                     index++;
                     left++;
+                    start = false;
+
                 }
                 else
                 {
                     temp[index] = arr1[right];
                     right++;
+                    start = true;
                 }
                 index++;
             }
             Array.Copy(arr1, left, temp, index, leftEnd - left + 1);
             Array.Copy(arr1, right, temp, index, rightEnd - right + 1);
+            
             Array.Copy(temp, leftStart, arr1, leftStart, size);
-            foreach (int num in arr1)
+          
+            if (start)
+                {
+                Console.Write("Hello ");
+                foreach (int num in arr1)
             {
                 Console.Write(num + " ");
             }
+                }
+            if (!start)
+                {
+                Console.Write("Goodbye");
+                }
         }
     }
 }
